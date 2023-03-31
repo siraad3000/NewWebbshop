@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>All orders</h1>
+    <hr />
+    <section id="ren"></section>
+    <form class="form">
+      <fieldset>
+        <input
+          type="number"
+          name="productId"
+          id="productId"
+          placeholder="Product_Id"
+        />
+        <br />
+        <input
+          type="text"
+          name="name"
+          id="newUsername"
+          placeholder="Name"
+          required
+        />
+        <br />
+        <input
+          type="email"
+          name="email"
+          id="newEmail"
+          placeholder="E-mail"
+          required
+        />
+        <br />
+        <input
+          type="text"
+          name="adress"
+          id="newAdress"
+          placeholder="Adress"
+          required
+        />
+        <br />
+        <select name="shipping-terms" id="newShipping" required>
+          <option value="">Select, shipping-terms.</option>
+          <option value="Postnord">Postnord</option>
+          <option value="Bring">Bring</option>
+          <option value="DHL">DHL</option>
+          <option value="Budbee">Budbee</option>
+        </select>
+      </fieldset>
+    </form>
+
+    <script src="admin.js"></script>
+  </body>
+</html>

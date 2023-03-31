@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Order information</h1>
+    <br /><br />
+    <form id="form">
+      <fieldset>
+        <label for="name"> Name</label>
+        <br />
+        <input
+          type="text"
+          name="name"
+          id="username"
+          placeholder="Please, enter."
+          required
+        />
+        <br /><br />
+        <label for="email">E-mail</label>
+        <br />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Please, enter."
+          required
+        />
+        <br /><br />
+        <label for="adress">Adress</label>
+        <br />
+        <input
+          type="text"
+          name="adress"
+          id="adress"
+          placeholder="Please,enter."
+          required
+        />
+        <br /><br />
+        <label for="shipping-terms">Shipping-terms</label>
+        <br />
+        <select name="shipping-terms" id="shipping" required>
+          <option value="">Select, shipping-terms.</option>
+          <option value="Postnord">Postnord</option>
+          <option value="Bring">Bring</option>
+          <option value="DHL">DHL</option>
+          <option value="Budbee">Budbee</option>
+        </select>
+        <br /><br />
+        <input
+          id="send"
+          type="submit"
+          value="Done"
+          disabled
+          onclick="postOrder()"
+        />
+        <br /><br />
+      </fieldset>
+    </form>
+    <br />
+    <a href="index.html">Back to products</a>
+
+    <script src="app.js"></script>
+  </body>
+</html>
